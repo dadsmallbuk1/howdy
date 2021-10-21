@@ -3,6 +3,18 @@
 <html>
 <head>
   <script src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.konami.min.js"></script>
+  <script>
+  $( window ).konami({
+
+        cheat: function() {
+
+            alert( 'Cheat code activated!' );
+
+        }
+
+});
+  </script>
   <script>
   var images = ['1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif'];
 $('html').css({'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});
