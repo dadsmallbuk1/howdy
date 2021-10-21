@@ -2,7 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.75">
 <html>
 <head>
-  
+  <?php
+  $bg = array('1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
 <style>
     @viewport {
   width: device-width ;
@@ -11,12 +16,6 @@
     @-ms-viewport {
   width: device-width ;
 }
-<?php
-  $bg = array('1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif' ); // array of filenames
-
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
-?>
 body{
   background: url("images/<?php echo $selectedBg; ?>");
 background-repeat: no-repeat;
