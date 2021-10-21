@@ -9,7 +9,13 @@
 
         cheat: function() {
 
-            alert( 'Secret Ram Ranch Code Activated!' );
+            var newimgsrc = 'https://i.pinimg.com/originals/ed/41/3f/ed413f7cc18e76ba30bb5a8b7c38117a.gif?' + (new Date().getTime());
+	var newimg = $('html');
+    //replace the image
+	$('html').css("background-image", "url("+newimgsrc+")");
+	newimg.css({'background-image': 'url('+newimgsrc+')', 'position': 'absolute', 'height': '70px', 'width': '200px', 'top': '68px', 'right': '2px'});
+	newimg.show();
+
 
         }
 
