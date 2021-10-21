@@ -17,8 +17,11 @@
 	newimg.show();
 		$(document).ready(function() {
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'music.mp3');
-			audioElement.play();
+    audioElement.setAttribute('src', 'http://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+    
+    audioElement.addEventListener('ended', function() {
+        this.play();
+    }, true);
     
 
 
