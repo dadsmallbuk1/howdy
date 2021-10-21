@@ -2,6 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.75">
 <html>
 <head>
+    <?php
+  $bg = array('1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
 <style>
     @viewport {
   width: device-width ;
@@ -11,7 +17,7 @@
   width: device-width ;
 }
 body{
-background-image:url("https://i.pinimg.com/originals/71/6e/28/716e28358d104ffc346bf25878f37181.gif");
+background: url(images/<?php echo $selectedBg; ?>);
 background-repeat: no-repeat;
 background-size:cover;
 background-position: center;
