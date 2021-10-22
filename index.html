@@ -92,6 +92,33 @@ text-align: center;
     .drop{
       margin-top: 25%;
     }
+	}
+	
+	
+	.call-support {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #aaa;
+  color: white;
+  font-family: Arial;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.support {
+  text-align: center;
+}
+.show-large {
+  display: none;
+}
+@media only screen and (min-width: 767px) {
+  .show-large {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
@@ -100,6 +127,10 @@ text-align: center;
 <img class="fire" src="https://media2.giphy.com/media/EfpSB84AuYM6uiZOwZ/giphy.gif" width="600" height="400"></img>
 <img id="cowbo" src="https://th.bing.com/th/id/R.b4e5a56f6e209cd3a8a2be96cc56ab19?rik=AkloQZ8PJkYGIw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fcowboy%2fcowboy_PNG9.png&ehk=Vt8FSQVPWpYXSTRuVCUytt9%2b4d9SsNG4jBlonE8EW4U%3d&risl=&pid=ImgRaw&r=0" width="500" height="600"></img>
 <p class="drop">.</p>
+<div class='support'>
+  <a class="call-support show-mobile" href="tel:555-555-5555">Call Support</a>
+  <span class='show-large'>Call customer support at 555-555-5555.</span>
+</div>
 
 </body>
 </html>
